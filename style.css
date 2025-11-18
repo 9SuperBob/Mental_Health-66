@@ -1,0 +1,1481 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Prompt", sans-serif;
+}
+:root {
+  --font-color: #667eea;
+}
+
+/* index.css page1 */
+.grap2 {
+  background-color: #f4faff;
+  padding: 6rem;
+}
+
+.background-home {
+  background: linear-gradient(
+      to right,
+      rgba(102, 126, 234, 0.8),
+      rgba(118, 75, 162, 0.8)
+    ),
+    url("https://etimg.etb2bimg.com/photo/77610475.cms") center/cover no-repeat;
+  height: 80vh;
+  position: relative;
+  overflow: visible;
+}
+
+.navmenu {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navmenu:hover {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.95) 0%, rgba(118, 75, 162, 0.95) 100%);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Navigation Links Hover Effects */
+.nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  padding: 8px 16px !important;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #ffc107;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 80%;
+}
+
+.feel_more h1 {
+  padding-top: 150px;
+  font-size: 8rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.hero {
+  padding: 150px;
+}
+
+.hero .text_2 h1 {
+  padding-top: 10px;
+  font-size: 65px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero .text_2 p {
+  padding-top: 45px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #555555;
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn-text3 {
+  width: 235px;
+  height: 50px;
+}
+
+.div1 {
+  grid-row: span 2 / span 2;
+  background-color: #571e1e;
+  height: 150px;
+  border-radius: 10px;
+  background-image: url("https://plus.unsplash.com/premium_vector-1746328731708-878e77dd6f5b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=500");
+  background-size: cover;
+}
+
+.text-homepage {
+  min-height: 150px;
+  height: auto;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.text-homepage p {
+  font-size: 18px;
+}
+
+/* Responsive adjustments for text-homepage section */
+@media (max-width: 768px) {
+  .text-homepage {
+    min-height: 120px;
+    padding: 15px;
+  }
+
+  .text-homepage h2 {
+    font-size: 1.5rem !important;
+    line-height: 1.3;
+    margin-bottom: 15px !important;
+  }
+
+  .text-homepage p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 576px) {
+  .text-homepage {
+    min-height: 100px;
+    padding: 12px;
+  }
+
+  .text-homepage h2 {
+    font-size: 1.3rem !important;
+    line-height: 1.2;
+    margin-bottom: 12px !important;
+  }
+
+  .text-homepage p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+.card-homepage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.cards {
+  height: 390px;
+  width: 350px;
+  /* border : 1px solid red; */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cards:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.pic-card img {
+  height: 200px;
+  width: 180px;
+  margin-top: 15px;
+  border-radius: 10px;
+  object-fit: cover;
+  /* border: 1px solid red; */
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* footer */
+
+.footer-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 3rem;
+}
+
+.footer-copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 50px;
+  width: 100%;
+}
+
+.social-icon {
+  color: white;
+  font-size: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icon.facebook:hover {
+  color: #1877f2;
+  transform: scale(1.3);
+}
+
+.social-icon.instagram:hover {
+  color: #e4405f;
+  transform: scale(1.3);
+}
+
+.social-icon.twitter:hover {
+  color: #000000;
+  transform: scale(1.3);
+}
+
+.social-icon.lines:hover {
+  color: #28e457;
+  transform: scale(1.3);
+}
+
+/*  ------------------------understanding.css page2---------------------------- */
+/* Header Section */
+.understanding-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 120px 0 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.understanding-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("https://etimg.etb2bimg.com/photo/77610475.cms") center/cover
+    no-repeat;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.understanding-header .container {
+  position: relative;
+  z-index: 1;
+}
+
+.understanding-header h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.understanding-header .lead {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Mental Health Cards */
+.mental-health-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card-whatmental {
+  margin-right: 8rem;
+}
+
+.card-stress {
+  margin-right: 8rem;
+}
+
+.img-whatmental {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border: 3px solid #9aa4ce;
+}
+
+.img-stress {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border: 3px solid #9aa4ce;
+}
+
+.img-anxiety {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border: 3px solid #9aa4ce;
+}
+
+.mental-health-card h3 {
+  color: #667eea;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mental-health-card h5 {
+  color: #495057;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.mental-health-card p {
+  color: #666;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.mental-health-card ul {
+  color: #555;
+  line-height: 1.7;
+}
+
+.mental-health-card li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+/* Symptom List */
+
+.depression {
+  background-color: #b6cce0;
+  color: #ffffff;
+}
+.symptom-list-depression {
+  background: linear-gradient(
+      to right,
+      rgba(22, 126, 230, 0.7),
+      rgba(233, 236, 239, 0.7)
+    ),
+    url("https://plus.unsplash.com/premium_vector-1729739667195-e2e281df2ed4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fERlcHJlc3Npb258ZW58MHx8MHx8fDA%3D");
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding-left: 2.5rem;
+}
+
+.burnout {
+  background-color: #f8b8b8;
+  color: #ffffff;
+}
+
+.symptom-list-burnout {
+  background: linear-gradient(
+      to right,
+      rgba(196, 43, 43, 0.7),
+      rgba(233, 236, 239, 0.7)
+    ),
+    url("https://plus.unsplash.com/premium_vector-1748021449425-6a39d19f5ade?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTU1fHxCdXJub3V0JTIwU3luZHJvbWV8ZW58MHx8MHx8fDA%3D");
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding-left: 2.5rem;
+}
+
+.symptom-list li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.symptom-list li::before {
+  content: "•";
+  color: #667eea;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0.5rem;
+  top: -0.2rem;
+}
+
+/* Alert Styles */
+.alert {
+  border-radius: 15px;
+  border: none;
+  padding: 1.5rem;
+  font-weight: 500;
+}
+
+.alert-danger {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a5a);
+  color: white;
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.3);
+}
+
+/* Content Section */
+.py-5 {
+  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+  padding: 5rem 0;
+}
+
+/* Section Title */
+.text-center h2 {
+  color: #667eea;
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+.text-center h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.bullying-title {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.bullying-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* CTA Section */
+.text-center.mt-5 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  padding: 3rem;
+  color: white;
+  margin: 3rem 0;
+}
+
+.text-center.mt-5 h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(102, 126, 234, 0.1) 0%,
+    rgba(118, 75, 162, 0.1) 100%
+  );
+}
+
+footer .container {
+  position: relative;
+  z-index: 1;
+}
+
+footer a {
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+/*   ------------------------toolkit.css page3---------------------------- */
+
+.toolkit-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 120px 0 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.toolkit-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("https://etimg.etb2bimg.com/photo/77610475.cms") center/cover
+    no-repeat;
+  opacity: 0.1;
+  z-index: 0;
+}
+.toolkit-header a {
+  z-index: 2;
+}
+
+.toolkit-header .container h1 {
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.tool-section {
+  /* padding: 1rem ; */
+  border: 2px solid #1c76b3;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.technique-card {
+  border: 1px solid #1c76b3;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  padding: 25px;
+}
+
+.sleep-img {
+  width: 100%;
+  height: 250px;
+  background-color: red;
+  background-image: url("https://plus.unsplash.com/premium_vector-1719858610971-315aa7193ec3?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #000000;
+}
+
+.card-sleep:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.food-img {
+  width: 100%;
+  height: 250px;
+  background-color: red;
+  background-image: url("https://plus.unsplash.com/premium_vector-1719858610627-4b70cc15a340?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #1c76b3;
+}
+.card-food:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.exercise-img {
+  width: 100%;
+  height: 250px;
+  background-color: red;
+  background-image: url("https://plus.unsplash.com/premium_vector-1719858612540-b8abdec0ec17?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #1c76b3;
+}
+
+.card-exercise:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.social-img {
+  width: 100%;
+  height: 250px;
+  background-image: url("https://plus.unsplash.com/premium_vector-1719858610697-c8b431216b5d?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #1c76b3;
+}
+
+.card-social:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* ==================== article.css page4 ==================== */
+
+.article-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 120px 0 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.article-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("https://etimg.etb2bimg.com/photo/77610475.cms") center/cover
+    no-repeat;
+  opacity: 0.1;
+  z-index: 0;
+}
+.article-header a {
+  z-index: 2;
+}
+
+.article-header .container h1 {
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.article-section {
+  /* padding: 1rem ; */
+  border: 2px solid #1c76b3;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.technique-card {
+  border: 1px solid #1c76b3;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  padding: 25px;
+}
+
+.mental-health-card h2 {
+  color: #667eea;
+}
+.tip-box {
+  border: 1px solid #d9dfe4;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  height: 10%;
+  padding: 25px;
+}
+
+.img-tip-box {
+  /* border: 1px solid #1c76b3; */
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.tip-box-bodyimage {
+  width: 100%;
+  height: 210px;
+  /* background-color: rgba(90, 161, 208, 0.2); */
+  line-height: 1.7;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  /* border: 3px solid #1c76b3; */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.tip-box-bodyimage-5 {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  /* background-color: rgba(90, 161, 208, 0.2); */
+  /* border: 3px solid #1c76b3; */
+}
+
+
+
+/* ==================== help.css page5 ==================== */
+.help-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 120px 0 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.help-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("https://etimg.etb2bimg.com/photo/77610475.cms") center/cover
+    no-repeat;
+  opacity: 0.1;
+  z-index: 0;
+}
+.help-header a {
+  z-index: 2;
+}
+
+.help-header .container h1 {
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.help-section {
+  /* padding: 1rem ; */
+  border: 2px solid #1c76b3;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.technique-card {
+  border: 1px solid #1c76b3;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  padding: 25px;
+}
+
+.card-number {
+  background-color: rgb(233, 158, 158);
+  border-radius: 10px;
+  border: 3px solid #ff0000;
+}
+
+
+/* ==================== about.css page6 ==================== */
+.about-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 120px 0 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.about-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("https://etimg.etb2bimg.com/photo/77610475.cms") center/cover
+    no-repeat;
+  opacity: 0.1;
+  z-index: 0;
+}
+.about-header a {
+  z-index: 2;
+}
+
+.about-header .container h1 {
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.about-section {
+  /* padding: 1rem ; */
+  border: 2px solid #1c76b3;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.technique-card {
+  border: 1px solid #1c76b3;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  padding: 25px;
+}
+
+.card-shi {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+
+.card-nico {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+
+.card-thamp {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+
+/* Mobile First - Base styles for mobile */
+@media (max-width: 767.98px) {
+  /* Header & Navigation */
+  .hero {
+    padding: 50px 15px;
+  }
+
+  .hero .text_2 h1 {
+    font-size: 2.5rem;
+    padding-top: 0;
+    line-height: 1.2;
+  }
+
+  .hero .text_2 p {
+    width: 100%;
+    font-size: 16px;
+    padding-top: 20px;
+  }
+
+  .btn-text3 {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .text_3 .d-flex {
+    flex-direction: column;
+  }
+
+  /* Index Page */
+  .grap2 {
+    padding: 2rem 1rem;
+  }
+
+  .cards {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .pic-card img {
+    width: 100%;
+    height: 150px;
+  }
+
+  /* Understanding Page */
+  .understanding-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .understanding-header .lead {
+    font-size: 1.1rem;
+  }
+
+  .mental-health-card {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .card-whatmental,
+  .card-stress {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .img-whatmental,
+  .img-stress,
+  .img-anxiety {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .text-center h2 {
+    font-size: 1.8rem;
+  }
+
+  .symptom-list-depression,
+  .symptom-list-burnout {
+    padding: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  /* Toolkit Page */
+  .toolkit-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .technique-card {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 20px;
+  }
+
+  .technique-card.ms-5,
+  .technique-card.me-5 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .sleep-img,
+  .food-img,
+  .exercise-img,
+  .social-img {
+    height: 200px;
+  }
+
+  /* Footer */
+  .footer-bg {
+    padding: 2rem 1rem;
+  }
+
+  .footer-bg .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .footer {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .footer p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+
+  .footer-nav {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-nav h6 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  .footer-nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .footer-nav ul li {
+    margin: 3px 0;
+  }
+
+  .footer-nav ul li a {
+    font-size: 13px;
+    display: block;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .footer-contact {
+    margin-bottom: 1rem;
+  }
+
+  .footer-contact h6 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  .footer-contact p {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .footer-social {
+    justify-content: center !important;
+    gap: 15px !important;
+    margin-top: 15px;
+  }
+
+  .social-icon {
+    font-size: 22px;
+  }
+
+  .footer-copyright {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+  }
+
+  .footer-copyright p {
+    font-size: 11px;
+    line-height: 1.4;
+    padding: 0 10px;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero {
+    padding: 100px 50px;
+  }
+
+  .hero .text_2 h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero .text_2 p {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  .cards {
+    width: 300px;
+  }
+
+  .technique-card.ms-5 {
+    margin-left: 1rem !important;
+  }
+
+  .technique-card.me-5 {
+    margin-right: 1rem !important;
+  }
+}
+
+/* Large tablet/small desktop */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .hero .text_2 h1 {
+    font-size: 4rem;
+  }
+
+  .card-whatmental,
+  .card-stress {
+    margin-right: 4rem;
+  }
+}
+
+/* Bootstrap Navbar Styles */
+.navbar-toggler {
+  padding: 4px 8px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
+
+.navbar-toggler-icon-custom {
+  display: block;
+}
+
+.navbar-nav .nav-link.active {
+  color: #ffc107 !important;
+  font-weight: 700;
+}
+
+/* Fix navbar overlap issue */
+.navmenu {
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar-collapse {
+  position: relative;
+  z-index: 1001;
+  background: inherit;
+  border-radius: inherit;
+}
+
+/* Navigation responsive fixes */
+@media (max-width: 991.98px) {
+  .navmenu {
+    padding: 0;
+    position: relative;
+    z-index: 9999;
+  }
+
+  .navbar-collapse {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 10000 !important;
+    margin-top: 0 !important;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.98) 0%, rgba(118, 75, 162, 0.98) 100%) !important;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border: none;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 5px 0;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 15px 20px !important;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    color: #ffffff !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-nav .nav-link:hover {
+    background: rgba(102, 126, 234, 0.4);
+    color: #fff !important;
+    transform: translateX(5px);
+  }
+
+  .navbar-nav .nav-link.active {
+    background: rgba(102, 126, 234, 0.6);
+    color: #fff !important;
+  }
+
+  .navbar-collapse .d-flex {
+    justify-content: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-collapse .btn.btn-danger {
+    font-size: 14px;
+    padding: 10px 20px;
+    width: auto;
+  }
+}
+
+/* Extra small screens - mobile first */
+@media (max-width: 576px) {
+  .navbar {
+    padding: 10px 0;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem !important;
+  }
+
+  .navbar-toggler {
+    padding: 6px 10px;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 12px 15px !important;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .btn.btn-danger {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+
+  .d-flex {
+    width: 100%;
+  }
+}
+
+/* Utility classes for responsive */
+.mobile-center {
+  text-align: center !important;
+}
+
+.mobile-full-width {
+  width: 100% !important;
+}
+
+/* Fix for button spacing on mobile */
+@media (max-width: 576px) {
+  .btn {
+    margin-bottom: 10px;
+  }
+
+  .d-flex.flex-wrap > .btn {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  /* Extra responsive fixes for very small screens */
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Better text sizing for mobile */
+  h1,
+  .display-4 {
+    font-size: 1.8rem !important;
+  }
+
+  h2 {
+    font-size: 1.4rem !important;
+  }
+
+  h3 {
+    font-size: 1.2rem !important;
+  }
+
+  h4 {
+    font-size: 1.1rem !important;
+  }
+
+  h5 {
+    font-size: 1rem !important;
+  }
+
+  /* Improve touch targets */
+  .btn {
+    min-height: 44px;
+    padding: 12px 16px;
+  }
+
+  /* Better spacing for mobile */
+  .py-5 {
+    padding: 2rem 0 !important;
+  }
+
+  .my-5 {
+    margin: 2rem 0 !important;
+  }
+
+  .mb-5 {
+    margin-bottom: 2rem !important;
+  }
+
+  /* About page mobile fixes */
+  .about-content {
+    padding: 1rem !important;
+  }
+
+  .about-content h3 {
+    font-size: 1.3rem !important;
+    margin-bottom: 1rem;
+  }
+
+  .about-content .row .col-md-6 {
+    margin-bottom: 1rem !important;
+  }
+
+  .about-content .border {
+    padding: 1rem !important;
+  }
+
+  .about-content ul {
+    padding-left: 1.2rem;
+  }
+
+  .about-content li {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+  }
+
+  /* Team cards mobile */
+  .card-shi,
+  .card-nico,
+  .card-thamp {
+    margin-bottom: 1rem !important;
+  }
+
+  .card-shi h4,
+  .card-nico h4,
+  .card-thamp h4 {
+    font-size: 1.1rem !important;
+  }
+
+  .card-shi h5,
+  .card-nico h5,
+  .card-thamp h5 {
+    font-size: 0.9rem !important;
+  }
+
+  .card-shi p,
+  .card-nico p,
+  .card-thamp p {
+    font-size: 0.85rem !important;
+  }
+
+  /* Help page mobile fixes */
+  .emergency-section {
+    padding: 1rem !important;
+    margin-bottom: 1rem;
+  }
+
+  .hotline-number {
+    font-size: 2rem !important;
+  }
+
+  .resources-wrapper {
+    padding: 1rem !important;
+  }
+
+  .resource-card {
+    padding: 1rem !important;
+    margin-bottom: 1rem;
+  }
+
+  .resource-card h4 {
+    font-size: 1rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .resource-card p {
+    font-size: 0.85rem !important;
+  }
+
+  .resource-card .btn {
+    font-size: 0.8rem !important;
+    padding: 8px 12px !important;
+  }
+
+  .card-number {
+    padding: 1rem !important;
+  }
+
+  .card-number h4 {
+    font-size: 0.9rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .card-number p {
+    font-size: 0.8rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  .what-to-expect-box {
+    padding: 1rem !important;
+    margin: 1rem 0 !important;
+  }
+
+  .what-to-expect-box .card-body {
+    padding: 1rem !important;
+  }
+
+  .what-to-expect-box h3 {
+    font-size: 1.2rem !important;
+  }
+
+  .what-to-expect-box h5 {
+    font-size: 1rem !important;
+  }
+
+  .what-to-expect-box ul li {
+    font-size: 0.85rem !important;
+  }
+
+  /* Articles page mobile fixes */
+  .article-full {
+    padding: 1rem !important;
+  }
+
+  .mental-health-card {
+    padding: 1rem !important;
+  }
+
+  .bullying-title {
+    font-size: 1.3rem !important;
+  }
+
+  .tip-box {
+    padding: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .tip-box h5 {
+    font-size: 1rem !important;
+  }
+
+  .tip-box-bodyimage {
+    height: auto !important;
+    padding: 1rem !important;
+  }
+
+  .tip-box-bodyimage h5,
+  .tip-box-bodyimage h6 {
+    font-size: 0.9rem !important;
+  }
+
+  .tip-box-bodyimage ul li {
+    font-size: 0.8rem !important;
+  }
+
+  /* Modal mobile fixes */
+  .modal-dialog {
+    margin: 0.5rem;
+  }
+
+  .modal-body {
+    padding: 1rem !important;
+  }
+
+  .modal-title {
+    font-size: 1.1rem !important;
+  }
+
+  /* Footer mobile improvements */
+  .footer-bg {
+    padding: 1.5rem 0.5rem !important;
+  }
+
+  .footer h3 {
+    font-size: 1.2rem !important;
+  }
+
+  .footer p {
+    font-size: 0.8rem !important;
+    line-height: 1.3;
+  }
+
+  .footer-nav h6 {
+    font-size: 0.9rem !important;
+  }
+
+  .footer-nav ul li a {
+    font-size: 0.75rem !important;
+  }
+
+  .footer-contact h6 {
+    font-size: 0.9rem !important;
+  }
+
+  .footer-contact p {
+    font-size: 0.75rem !important;
+  }
+
+  .social-icon {
+    font-size: 18px !important;
+  }
+
+  .footer-copyright p {
+    font-size: 0.65rem !important;
+    padding: 0 5px !important;
+  }
+}
